@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-.list__item:before {
+.list__item::before {
   content: '·';
   font-size: 34px;
   margin-right: 5px;
