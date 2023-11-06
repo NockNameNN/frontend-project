@@ -11,7 +11,7 @@
   padding: 8px 12px;
   display: inline-flex;
   align-items: center;
-  color: #D1D5DB;
+  color: #d1d5db;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -25,8 +25,5 @@
 .menu__link--active,
 .menu__link--active:hover {
   background-color: #111827;
-  color: #FFF;
+  color: #fff;
 }
-
-
-
