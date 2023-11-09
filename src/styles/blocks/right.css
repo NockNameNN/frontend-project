@@ -1,0 +1,27 @@
+.right {
+  grid-column: span 8 / span 8;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 30px 32px;
+}
+
+.right__main-title {
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 26px;
+}
+
+.right__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  line-height: 20px;
+}
+
+.right__title {
+  font-size: 24px;
+}
+
+.right__text {
+  margin-bottom: 20px;
+}

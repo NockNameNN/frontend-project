@@ -14,42 +14,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__left">
-        <div class="header__logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="253"
-            height="60"
-            fill="none"
-          >
-            <path fill="url(#a)" d="M.5 0h252v60H.5z" />
-            <defs>
-              <pattern id="a" width="1" height="1" patternContentUnits="objectBoundingBox">
-                <use xlink:href="#b" transform="matrix(.0053 0 0 .02222 -.034 0)" />
-              </pattern>
-              <image
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAAtCAYAAADvJPSSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF8WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDUgNzkuMTY0NTkwLCAyMDIwLzEyLzA5LTExOjU3OjQ0ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIyLTA5LTE3VDE1OjI4OjEwKzA3OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wOS0xN1QxNTozNDoyMSswNzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0wOS0xN1QxNTozNDoyMSswNzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDphM2VjOTQ0Ny1mZThhLTlhNGEtYWRkYS0wMTNhNTExZDM5Y2EiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowZmZiODUxYi1jNjY3LWRiNDEtYTlhYS04MTA2NTgxNjk3NDciIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0NjA3Zjc0OC04ODNhLWEwNDAtOThlNi1jZjI5NjMxOGVhMzIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ2MDdmNzQ4LTg4M2EtYTA0MC05OGU2LWNmMjk2MzE4ZWEzMiIgc3RFdnQ6d2hlbj0iMjAyMi0wOS0xN1QxNToyODoxMCswNzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjEgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDphM2VjOTQ0Ny1mZThhLTlhNGEtYWRkYS0wMTNhNTExZDM5Y2EiIHN0RXZ0OndoZW49IjIwMjItMDktMTdUMTU6MzQ6MjErMDc6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi4xIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7SmfUnAAAHYElEQVR4nO1d0XHbOBB9uLkCeBUcU8EpFYSpwLoKwlRgXQVhKohSgeQKrKvAcgVWKpBSgZQK3n1geYQokARAmqLGeDMcUQR2uQDxsLsAZSuSiIiIaMdv1zYgIuIWEIkSEeGA320XlVIgOQOQKKW2o1oUEXFl2NIRK1EEp1ezJCLixqBs7FFKXcGUiIhpwMYJ5xyFZE6NbEijIiJuAiQvjoZ6KcktyWRcCyMixoWNEzH0ioiooVfo1aDwUcKxvI+eiIjJwzX0ssglrLB7XSsjIsaD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"
-                id="b"
-                width="202"
-                height="45"
-              />
-            </defs>
-          </svg>
+      <div class="header__wrapper container">
+        <div class="header__left">
+          <div class="header__logo">
+            <img src="public/images/logo.png" alt="" />
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link menu__link--active">Главная</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link menu__link--active">Главная</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__right">
-        <div class="header__name">Ваше имя</div>
-        <div class="header__avatar">
-          <img src="/public/Avatar menu button.svg" alt="" />
+        <div class="header__right">
+          <div class="header__name">Ваше имя</div>
+          <div class="header__avatar">
+            <img src="/public/images/avatar.png" alt="" />
+          </div>
         </div>
       </div>
     </header>
@@ -61,78 +44,78 @@
     <section class="info container">
       <h2 class="info__title">Полезная информация</h2>
       <div class="info__wrapper">
-        <div class="info__left">
-          <div class="info__left-title">Заголовок</div>
-          <ul class="info__left-list">
-            <li class="list__item">Список 1</li>
-            <li class="list__item">Список 2</li>
-            <li class="list__item">Список 3</li>
-            <li class="list__item">Список 4</li>
+        <div class="left">
+          <div class="left-title">Заголовок</div>
+          <ul class="left-list">
+            <li class="left__list-item">Список 1</li>
+            <li class="left__list-item">Список 2</li>
+            <li class="left__list-item">Список 4</li>
+            <li class="left__list-item">Список 3</li>
           </ul>
         </div>
-        <div class="info__right">
-          <h3 class="info__right-title">СФУ и Россий­ский универ­ситет спорта стали парт­нёрами</h3>
-          <article class="info__right-content">
-            <div class="content__title">Заголовок</div>
-            <p class="content__text">
+        <div class="right">
+          <h3 class="right__main-title">СФУ и Россий­ский универ­ситет спорта стали парт­нёрами</h3>
+          <section class="right__content">
+            <div class="right__title">Заголовок</div>
+            <p class="right__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-          </article>
-          <article class="info__right-content">
-            <div class="content__title">Заголовок</div>
-            <p class="content__text">
+          </section>
+          <section class="right-content">
+            <div class="right__title">Заголовок</div>
+            <p class="right__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-          </article>
+          </section>
         </div>
       </div>
     </section>
 
-    <section class="blog">
+    <section class="blog container">
       <div class="blog__header">
         <h2 class="blog__title">Интересные статьи</h2>
-        <p class="blog__description">Описать, о чем эти статьи, кратко</p>
+        <p class="blog__description blog__p">Описать, о чем эти статьи, кратко</p>
       </div>
       <div class="blog__wrapper">
         <article class="post">
-          <img src="public\Post1.png" alt="" class="post__image" />
+          <img src="public/images/Post1.png" alt="" class="post__image" />
           <div class="post__content">
-            <div class="post__content-title">Boost your conversion rate</div>
-            <p class="post__content-description">
+            <div class="post__title">Boost your conversion rate</div>
+            <p class="post__description blog__p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque
               fuga culpa, similique sequi cum eos quis dolorum.
             </p>
-            <p class="post__content-support">Mar 16, 2020 · 6 min read</p>
+            <p class="post__support blog__p">Mar 16, 2020 · 6 min read</p>
           </div>
         </article>
         <article class="post">
-          <img src="public\Post2.png" alt="" class="post__image" />
+          <img src="public/images/Post2.png" alt="" class="post__image" />
           <div class="post__content">
-            <div class="post__content-title">How to use search engine optimization to drive sales</div>
-            <p class="post__content-description">
+            <div class="post__title">How to use search engine optimization to drive sales</div>
+            <p class="post__description blog__p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus,
               eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.
             </p>
-            <p class="post__content-support">Mar 10, 2020 · 4 min read</p>
+            <p class="post__support blog__p">Mar 10, 2020 · 4 min read</p>
           </div>
         </article>
         <article class="post">
-          <img src="public\Post3.png" alt="" class="post__image" />
+          <img src="public/images/Post3.png" alt="" class="post__image" />
           <div class="post__content">
-            <div class="post__content-title">Improve your customer experience</div>
-            <p class="post__content-description">
+            <div class="post__title">Improve your customer experience</div>
+            <p class="post__description blog__p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni
               placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
             </p>
-            <p class="post__content-support">Feb 12, 2020 · 11 min read</p>
+            <p class="post__support blog__p">Feb 12, 2020 · 11 min read</p>
           </div>
         </article>
       </div>

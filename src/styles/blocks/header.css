@@ -1,12 +1,11 @@
 .header {
+  background-color: #1f2937;
+}
+
+.header__wrapper {
   display: flex;
-  width: 1920px;
-  height: 80px;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2937;
-  padding-right: 331px;
-  padding-left: 331px;
 }
 
 .header__left {

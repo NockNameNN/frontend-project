@@ -4,5 +4,8 @@
 @import 'blocks/menu.css';
 @import 'blocks/titile.css';
 @import 'blocks/info.css';
+@import 'blocks/left.css';
+@import 'blocks/right.css';
 @import 'blocks/blog.css';
+@import 'blocks/post.css';
 @import 'blocks/footer.css';
