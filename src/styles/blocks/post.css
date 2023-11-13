@@ -10,11 +10,12 @@
   flex-direction: column;
   padding: 24px;
   flex-grow: 1;
-  height: 328px;
+  gap: 12px;
 }
 
 .post__support {
   margin-top: auto;
+  color: #6b7280;
 }
 
 .post__title {
@@ -24,5 +25,5 @@
 }
 
 .post__description {
-  padding-top: 12px;
+  color: #6b7280;
 }
