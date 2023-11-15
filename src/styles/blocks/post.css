@@ -8,9 +8,16 @@
 .post__content {
   display: flex;
   flex-direction: column;
+  min-height: 328px;
   padding: 24px;
   flex-grow: 1;
   gap: 12px;
+}
+
+.post__image {
+  height: 192px;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .post__support {
