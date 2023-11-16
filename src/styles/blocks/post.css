@@ -3,6 +3,7 @@
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .post__content {
@@ -17,7 +18,6 @@
 .post__image {
   height: 192px;
   object-fit: contain;
-  overflow: hidden;
 }
 
 .post__support {
