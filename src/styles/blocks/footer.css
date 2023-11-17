@@ -1,0 +1,12 @@
+.footer {
+  background: #6a6a6a;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer__wrapper {
+  color: #fff;
+  text-align: right;
+  font-size: 11px;
+  line-height: 20px;
+}

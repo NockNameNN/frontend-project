@@ -1,0 +1,27 @@
+.sidebar {
+  border: 1px solid #000;
+  background: #fcffe7;
+  padding: 30px;
+}
+
+.sidebar__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar__list {
+  margin-top: 16px;
+}
+
+.sidebar__item {
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__item::before {
+  content: '·';
+  font-size: 34px;
+  margin-right: 5px;
+  line-height: 1;
+}
