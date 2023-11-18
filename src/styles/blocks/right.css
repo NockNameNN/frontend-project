@@ -24,3 +24,22 @@
 .right__text {
   margin-bottom: 20px;
 }
+
+@media (width < 1024px) {
+  .right {
+    padding: 20px 22px;
+  }
+
+  .right__main-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .right__title {
+    font-size: 20px;
+  }
+
+  .right__text {
+    font-size: 16px;
+  }
+}

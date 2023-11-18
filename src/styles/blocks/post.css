@@ -34,3 +34,41 @@
 .post__description {
   color: #6b7280;
 }
+
+@media (width < 1280px) {
+  .post__image {
+    height: 150px;
+  }
+}
+
+@media (width < 1024px) {
+  .post__image {
+    height: 111px;
+  }
+
+  .post__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .post__description {
+    font-size: 14px;
+  }
+
+  .post__support {
+    font-size: 14px;
+  }
+}
+
+@media (width < 768px) {
+  .post__image {
+    height: 128px;
+  }
+}
+
+@media (width < 576px) {
+  .post__image {
+    height: 100%;
+    width: 100%;
+  }
+}

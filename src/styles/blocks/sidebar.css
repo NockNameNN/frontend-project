@@ -25,3 +25,17 @@
   margin-right: 5px;
   line-height: 1;
 }
+
+@media (width < 1024px) {
+  .sidebar {
+    padding: 20px;
+  }
+
+  .sidebar__title {
+    font-size: 18px;
+  }
+
+  .sidebar__list {
+    margin-top: 10px;
+  }
+}

@@ -17,3 +17,27 @@
 .info__right {
   grid-column: span 8 / span 8;
 }
+
+@media (width < 1024px) {
+  .info__title {
+    font-size: 26px;
+  }
+
+  .info__wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (width < 576px) {
+  .info__title {
+    font-size: 20px;
+  }
+
+  .info__sidebar {
+    grid-column: span 12 / span 12;
+  }
+
+  .info__right {
+    grid-column: span 12 / span 12;
+  }
+}
