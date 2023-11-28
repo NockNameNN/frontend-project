@@ -32,3 +32,40 @@
   font-size: 20px;
   color: #6b7280;
 }
+
+@media (width < 1024px) {
+  .blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 24px;
+  }
+
+  .blog__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .blog__header {
+    gap: 12px;
+  }
+
+  .blog__wrapper {
+    gap: 14px;
+  }
+
+  .blog__description {
+    font-size: 16px;
+  }
+}
+
+@media (width < 768px) {
+  .blog__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width < 576px) {
+  .blog__wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

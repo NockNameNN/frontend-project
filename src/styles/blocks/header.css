@@ -35,3 +35,46 @@
   border-radius: 16px;
   background: #fff;
 }
+
+@media (width < 1024px) {
+  .header__name {
+    font-size: 13px;
+  }
+
+  .header__avatar {
+    width: 30%;
+  }
+
+  .header__logo {
+    width: 30%;
+  }
+
+  .header__left {
+    justify-content: flex-start;
+  }
+}
+
+@media (width < 768px) {
+  .header__wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__avatar {
+    width: 30%;
+  }
+}
+
+@media (width < 576px) {
+  .header__name {
+    display: none;
+  }
+
+  .header__avatar {
+    width: 70%;
+  }
+}
