@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch((error) => console.error('Ошибка:', error));
 });
 
+window.addEventListener('load', () => {
+  const savedView = localStorage.getItem('view');
+  savedView == 'list'
+    ? document.querySelector('.blog__btn-list').click()
+    : document.querySelector('.blog__btn-grid').click();
+});
+
 function createPostElement(post) {
   const newPost = document.createElement('article');
   newPost.classList.add('post');
