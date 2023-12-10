@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.post--list {
+  flex-direction: row;
+}
+
 .post__content {
   display: flex;
   flex-direction: column;
@@ -15,9 +19,13 @@
   gap: 12px;
 }
 
+.post__content--list {
+  min-height: initial;
+}
+
 .post__image {
   height: 192px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .post__support {

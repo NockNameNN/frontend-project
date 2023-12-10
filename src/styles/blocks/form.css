@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-size: 18px;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__textarea {
+  resize: none;
+  min-height: 127.681px;
+}
+
+.form__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__btn {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  width: 299px;
+  padding: 9px 0;
+  border: 1px solid #000;
+}
+
+.form__btn--create {
+  background-color: #fcffe7;
+}
+
+@media (width < 1280px) {
+  .form__btn-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    align-items: center;
+  }
+}
