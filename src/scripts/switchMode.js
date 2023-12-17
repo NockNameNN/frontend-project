@@ -12,7 +12,6 @@ document.querySelector('.blog__btn-grid').addEventListener('click', () => {
 function switchMode(view) {
   const wrap = document.querySelector('.blog__wrapper');
   const posts = document.querySelectorAll('.post');
-
   localStorage.setItem('view', view);
 
   if (view == 'list') {

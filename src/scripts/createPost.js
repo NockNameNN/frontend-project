@@ -60,5 +60,8 @@ btn_create.addEventListener('click', () => {
   const blogWrapper = document.querySelector('.blog__wrapper');
   blogWrapper.appendChild(newPost);
 
+  const savedView = localStorage.getItem('view');
+  document.querySelector('.blog__btn-' + savedView).click();
+
   btn_cancel.click();
 });
