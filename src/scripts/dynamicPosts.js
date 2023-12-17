@@ -7,15 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const newPost = createPostElement(post);
         blogWrapper.appendChild(newPost);
       });
+      const savedView = localStorage.getItem('view');
+      document.querySelector('.blog__btn-' + savedView).click();
     })
     .catch((error) => console.error('Ошибка:', error));
-});
-
-window.addEventListener('load', () => {
-  const savedView = localStorage.getItem('view');
-  savedView == 'list'
-    ? document.querySelector('.blog__btn-list').click()
-    : document.querySelector('.blog__btn-grid').click();
 });
 
 function createPostElement(post) {
@@ -56,6 +51,5 @@ function createPostElement(post) {
   postContent.appendChild(postSupport);
 
   newPost.appendChild(postContent);
-
   return newPost;
 }

@@ -19,8 +19,8 @@
   gap: 12px;
 }
 
-.post__content--list {
-  min-height: initial;
+.post--list .post__content {
+  min-height: auto;
 }
 
 .post__image {

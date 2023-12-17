@@ -19,6 +19,10 @@
   gap: 16px;
 }
 
+.blog__svg--active {
+  color: #ea1313;
+}
+
 .blog__wrapper--grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
