@@ -62,8 +62,8 @@
 
 .blog__form {
   width: 100%;
-  padding-right: 212px;
-  padding-left: 215px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 @media (width < 1024px) {

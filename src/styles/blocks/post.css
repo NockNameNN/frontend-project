@@ -72,11 +72,19 @@
   .post__image {
     height: 128px;
   }
+
+  .post--list .post__image {
+    height: 150px;
+  }
 }
 
 @media (width < 576px) {
   .post__image {
     height: 100%;
     width: 100%;
+  }
+
+  .post--list .post__image {
+    height: 100px;
   }
 }

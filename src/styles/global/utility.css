@@ -16,7 +16,7 @@ button {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 @media (width < 1280px) {

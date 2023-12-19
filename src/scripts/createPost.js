@@ -1,8 +1,16 @@
+import { switchMode } from './switchMode.js';
+
 const form = document.querySelector('.blog__form');
 
 const btn_add = document.querySelector('.blog__btn');
 const btn_cancel = document.querySelector('.form__btn--cancel');
 const btn_create = document.querySelector('.form__btn--create');
+
+function resetForm() {
+  form.classList.add('hidden');
+  btn_add.classList.remove('hidden');
+  document.querySelector('.form').reset();
+}
 
 btn_add.addEventListener('click', () => {
   form.classList.remove('hidden');
@@ -10,8 +18,7 @@ btn_add.addEventListener('click', () => {
 });
 
 btn_cancel.addEventListener('click', () => {
-  form.classList.add('hidden');
-  btn_add.classList.remove('hidden');
+  resetForm();
 });
 
 btn_create.addEventListener('click', () => {
@@ -61,7 +68,7 @@ btn_create.addEventListener('click', () => {
   blogWrapper.appendChild(newPost);
 
   const savedView = localStorage.getItem('view');
-  document.querySelector('.blog__btn-' + savedView).click();
+  switchMode(savedView);
 
-  btn_cancel.click();
+  resetForm();
 });

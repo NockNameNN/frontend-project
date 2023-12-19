@@ -1,3 +1,5 @@
+import { switchMode } from './switchMode.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('https://techcrunch.com/wp-json/wp/v2/posts?per_page=6')
     .then((response) => response.json())
@@ -8,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         blogWrapper.appendChild(newPost);
       });
       const savedView = localStorage.getItem('view');
-      document.querySelector('.blog__btn-' + savedView).click();
+      switchMode(savedView);
     })
     .catch((error) => console.error('Ошибка:', error));
 });
@@ -28,12 +30,12 @@ function createPostElement(post) {
 
   const postTitle = document.createElement('h3');
   postTitle.classList.add('post__title');
-  postTitle.innerHTML = post.title.rendered;
+  postTitle.textContent = post.title.rendered;
   postContent.appendChild(postTitle);
 
   const postDescription = document.createElement('p');
   postDescription.classList.add('post__description');
-  postDescription.innerHTML = post.excerpt.rendered;
+  postDescription.textContent = post.excerpt.rendered;
   postContent.appendChild(postDescription);
 
   const postDate = new Date(post.date);

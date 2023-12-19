@@ -1,6 +1,3 @@
-const svgList = document.querySelector('.blog__svg-list');
-const svgGrid = document.querySelector('.blog__svg-grid');
-
 document.querySelector('.blog__btn-list').addEventListener('click', () => {
   switchMode('list');
 });
@@ -9,7 +6,9 @@ document.querySelector('.blog__btn-grid').addEventListener('click', () => {
   switchMode('grid');
 });
 
-function switchMode(view) {
+export function switchMode(view) {
+  const svgList = document.querySelector('.blog__svg-list');
+  const svgGrid = document.querySelector('.blog__svg-grid');
   const wrap = document.querySelector('.blog__wrapper');
   const posts = document.querySelectorAll('.post');
   localStorage.setItem('view', view);
