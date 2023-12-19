@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.post--list {
+  flex-direction: row;
+}
+
 .post__content {
   display: flex;
   flex-direction: column;
@@ -15,9 +19,13 @@
   gap: 12px;
 }
 
+.post--list .post__content {
+  min-height: auto;
+}
+
 .post__image {
   height: 192px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .post__support {
@@ -64,11 +72,19 @@
   .post__image {
     height: 128px;
   }
+
+  .post--list .post__image {
+    height: 150px;
+  }
 }
 
 @media (width < 576px) {
   .post__image {
     height: 100%;
     width: 100%;
+  }
+
+  .post--list .post__image {
+    height: 100px;
   }
 }
