@@ -66,6 +66,10 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+.blog__form-inner {
+  grid-column: 3 / span 8;
+}
+
 @media (width < 1024px) {
   .blog {
     padding-top: 50px;
@@ -103,6 +107,10 @@
 
   .blog__btn {
     width: 50%;
+  }
+
+  .blog__form-inner {
+    grid-column: -1 / 1;
   }
 }
 
