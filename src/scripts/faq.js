@@ -1,4 +1,6 @@
 const buttons = document.querySelectorAll('.faq__btn');
+const descriptions = document.querySelectorAll('.faq__description');
+const svgs = document.querySelectorAll('.faq__svg');
 
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
@@ -7,9 +9,6 @@ buttons.forEach((button, index) => {
 });
 
 function openDescription(index) {
-  const descriptions = document.querySelectorAll('.faq__description');
-  const svgs = document.querySelectorAll('.faq__svg');
-
   descriptions.forEach((description) => {
     description.classList.add('hidden');
   });
